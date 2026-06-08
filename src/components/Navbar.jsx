@@ -1,15 +1,19 @@
 import { useState } from "react";
 import { FaBars, FaGithub, FaTimes } from "react-icons/fa";
-
+import favicon from "../assets/favicon.png";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/60 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold tracking-wide">
-          MR<span className="text-blue-500">.</span>
+        <a href="#" className="flex h-full items-center">
+          <img
+            src={favicon}
+            alt="Muhamad Ramdani"
+            className="h-12 w-12 rounded-full border-2 border-blue-500 object-cover object-[center_80%]"
+          />
         </a>
 
         {/* Desktop Menu */}
