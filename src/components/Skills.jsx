@@ -1,22 +1,24 @@
 import skills from "../data/skills";
-
+import FadeIn from "./FadeIn";
 function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-7xl px-6 py-24">
-      <h2 className="mb-12 text-center text-4xl font-bold">
-        Skills & Technologies
-      </h2>
+    <FadeIn>
+      <section id="skills" className="mx-auto max-w-7xl px-6 py-24">
+        <h2 className="mb-12 text-center text-4xl font-bold">
+          Skills & Technologies
+        </h2>
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        <SkillCard title="Frontend" items={skills.frontend} />
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <SkillCard title="Frontend" items={skills.frontend} />
 
-        <SkillCard title="Backend" items={skills.backend} />
+          <SkillCard title="Backend" items={skills.backend} />
 
-        <SkillCard title="Database" items={skills.database} />
+          <SkillCard title="Database" items={skills.database} />
 
-        <SkillCard title="Tools" items={skills.tools} />
-      </div>
-    </section>
+          <SkillCard title="Tools" items={skills.tools} />
+        </div>
+      </section>
+    </FadeIn>
   );
 }
 
