@@ -22,9 +22,8 @@ function Skills() {
 
 function SkillCard({ title, items }) {
   return (
-    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10">
       <h3 className="mb-4 text-xl font-semibold text-blue-500">{title}</h3>
-
       <div className="flex flex-wrap gap-2">
         {items.map((item) => (
           <span
