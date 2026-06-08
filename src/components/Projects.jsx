@@ -19,7 +19,7 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className=" group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/10"
+              className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 transition-all duration-300 hover:-translate-y-3 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/10"
             >
               <div className="h-48 bg-slate-800">
                 {project.image ? (
@@ -52,15 +52,7 @@ function Projects() {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="
-                  rounded-full
-                  border
-                  border-slate-700
-                  px-3
-                  py-1
-                  text-xs
-                  text-slate-300
-                "
+                      className="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-300"
                     >
                       {tech}
                     </span>
@@ -72,16 +64,7 @@ function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="
-                rounded-lg
-                border
-                border-slate-700
-                px-4
-                py-2
-                text-sm
-                transition
-                hover:border-blue-500
-              "
+                    className="rounded-lg border border-slate-700 px-4 py-2 text-sm transition hover:border-blue-500"
                   >
                     GitHub
                   </a>
@@ -91,15 +74,7 @@ function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noreferrer"
-                      className="
-                  rounded-lg
-                  bg-blue-600
-                  px-4
-                  py-2
-                  text-sm
-                  transition
-                  hover:bg-blue-700
-                "
+                      className="rounded-lg bg-blue-600 px-4 py-2 text-sm transition hover:bg-blue-700"
                     >
                       Live Demo
                     </a>

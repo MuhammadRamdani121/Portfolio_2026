@@ -7,36 +7,11 @@ function FeaturedProject() {
         <h2 className="text-4xl font-bold">Netband Management System</h2>
       </div>
 
-      <div
-        className="
-        overflow-hidden
-        rounded-3xl
-        border
-        border-slate-800
-        bg-slate-900
-        transition-all
-        duration-300
-        hover:border-blue-500
-        hover:shadow-xl
-        hover:shadow-blue-500/10
-      "
-      >
+      <div className="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 transition-all duration-300 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/10">
         <div className="grid md:grid-cols-2">
           {/* Screenshot */}
           <div className="flex items-center justify-center bg-slate-950 p-8">
-            <div
-              className="
-              flex
-              h-80
-              w-full
-              items-center
-              justify-center
-              rounded-2xl
-              border
-              border-slate-800
-              text-slate-500
-            "
-            >
+            <div className="flex h-80 w-full items-center justify-center rounded-2xl border border-slate-800 text-slate-500">
               Netband Screenshot
             </div>
           </div>
@@ -85,29 +60,14 @@ function FeaturedProject() {
                 href="https://github.com/MuhammadRamdani121"
                 target="_blank"
                 rel="noreferrer"
-                className="
-                rounded-xl
-                border
-                border-slate-700
-                px-6
-                py-3
-                transition
-                hover:border-blue-500
-              "
+                className="rounded-xl border border-slate-700 px-6 py-3 transition hover:border-blue-500"
               >
                 GitHub
               </a>
 
               <a
                 href="#"
-                className="
-                rounded-xl
-                bg-blue-600
-                px-6
-                py-3
-                transition
-                hover:bg-blue-700
-              "
+                className="rounded-xl bg-blue-600 px-6 py-3 transition hover:bg-blue-700"
               >
                 Live Demo
               </a>
